@@ -210,7 +210,7 @@
     <parent link="${prefix}moving_base"/>
     <child link="${prefix}parallel_1"/>
     <axis xyz="0.0 -1.0 0.0"/>
-    <limit lower="-1.13446" upper="1.22173" effort="1000" velocity="1"/>
+    <limit lower="-1.22173" upper="1.13446" effort="1000" velocity="1"/>
 </joint>
 
 <joint name="${prefix}jt2_1" type="revolute">

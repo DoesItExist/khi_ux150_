@@ -4,7 +4,10 @@
 
 
 <gazebo>
-  <plugin name="control" filename="libgazebo_ros_control.so"/>
+  <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
+    <robotNamespace>/khi_ux150</robotNamespace>
+    <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+  </plugin>
 </gazebo>
 <gazebo reference="base_link">
   <material>

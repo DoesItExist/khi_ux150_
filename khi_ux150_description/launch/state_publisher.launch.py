@@ -7,7 +7,7 @@ from launch_ros.descriptions import ParameterValue
 def generate_launch_description():
     pkg_share = launch_ros.substitutions.FindPackageShare(package='khi_ux150_description').find('khi_ux150_description')
     use_sim_time = LaunchConfiguration('use_sim_time')
-    default_model_path = os.path.join(pkg_share, 'urdf/khi_ux150.xacro')
+    default_model_path = os.path.join(pkg_share, 'urdf/khi_ux150.urdf.xacro')
     robot_state_publisher_node = launch_ros.actions.Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',

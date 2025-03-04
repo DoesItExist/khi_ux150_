@@ -52,9 +52,11 @@ def generate_launch_description():
     spawn_entity = Node(
         package='ros_gz_sim',
         executable='create',  # Use create or appropriate executable for spawning
-        arguments=['-entity', 'khi_ux150', '-topic', 'robot_description'],
-        parameters=[{'use_sim_time': use_sim_time}],
-        output='screen'
+        output='screen',
+        arguments=[ '-topic', 'robot_description'
+                    '-name', 'khi_ux150',
+                    '-allow_renaming', 'true'
+                   ]
     )
 
     ld.add_action(DeclareLaunchArgument(name='jsp_gui', default_value='true', choices=['true', 'false'],

@@ -13,7 +13,7 @@ import os
 def generate_launch_description():
     ld = LaunchDescription()
     pkg_share = FindPackageShare(package='khi_ux150_description').find('khi_ux150_description')   
-    default_model_path = os.path.join(pkg_share, 'urdf/khi_ux150.xacro')
+    default_model_path = os.path.join(pkg_share, 'urdf/khi_ux150.urdf.xacro')
     default_rviz_config_path = os.path.join(pkg_share, 'config/display.rviz')
     use_sim_time = launch.substitutions.LaunchConfiguration('use_sim_time')
 

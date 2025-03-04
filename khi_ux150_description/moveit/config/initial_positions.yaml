@@ -1,0 +1,9 @@
+# Default initial positions for khi_ux150's ros2_control fake system
+
+initial_positions:
+  jt1: 0
+  jt2: 0
+  jt3: 0
+  jt4: 0
+  jt5: 0
+  jt6: 0
