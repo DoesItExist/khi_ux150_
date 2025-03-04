@@ -18,7 +18,6 @@
         <joint name="jt4"/>
         <joint name="jt5"/>
         <joint name="jt6"/>
-        <joint name="jt2_1"/>
     </group>
     <group name="tool_holder">
         <joint name="jt6"/>
@@ -72,4 +71,5 @@
     <disable_collisions link1="neck" link2="parallel_1" reason="Never"/>
     <disable_collisions link1="neck" link2="parallel_2" reason="Never"/>
     <disable_collisions link1="neck" link2="plate" reason="Never"/>
+    <disable_collisions link1="parallel_1" link2="parallel_2" reason="Never"/>
 </robot>
