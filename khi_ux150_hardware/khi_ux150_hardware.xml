@@ -1,9 +1,0 @@
-<library path="khi_ux150_hardware">
-
-  <class name="khi_ux150_hardware/KhiUX150Hardware" type="khi_ux150_hardware::KhiUX150Hardware" base_class_type="hardware_interface::SystemInterface">
-    <description>
-      Hardware interface for Kawasaki UX150 using C controller
-    </description>
-  </class>
-
-</library>
